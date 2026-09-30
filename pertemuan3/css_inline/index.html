@@ -5,132 +5,141 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Profil Mahasiswa</title>
   </head>
+  <!-- SESUDAH: seluruh gaya ditulis inline (tanpa <style> dan tanpa file CSS) -->
   <body
     style="
-      font-family:
-        &quot;Lucida Sans&quot;, &quot;Lucida Sans Regular&quot;,
-        &quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, Geneva,
-        Verdana, sans-serif, sans-serif;
+      font-family: 'Segoe UI', Arial, sans-serif;
       background-color: #f4f4f4;
-      margin: 30px;
-      line-height: 1.2;
-      letter-spacing: 0.03rem;
+      margin: 0;
+      padding: 16px;
+      line-height: 1.6;
     "
   >
-    <!-- Judul Utama -->
-    <h1
-      style="
-        color: #003366;
-        font-size: 32px;
-        font-weight: bolder;
-        text-align: center;
-      "
-    >
-      Profil Mahasiswa
-    </h1>
-    <hr style="border: 3px solid #003366" />
-
-    <!-- Foto Profil -->
     <div
       style="
-        text-align: center;
-        margin: 3%;
-        padding: 2%;
-        background-color: rgb(0, 174, 255);
-        background-size: contain;
-        border-top-right-radius: 5%;
-        border-bottom-left-radius: 5%;
-        border: 5px solid #003366;
+        max-width: 760px;
+        margin: 0 auto;
+        background-color: white;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 4px 16px rgba(0, 51, 102, 0.2);
       "
     >
-      <img
-        src="images/profil.jpg"
-        alt="Foto Profil Mahasiswa"
-        width="33.33%"
+      <!-- Header: judul + foto -->
+      <div
         style="
-          border-radius: 10px;
-          border: 10px solid #003366;
-          box-shadow: rgba(0, 102, 153, 0.15);
+          background-color: #003366;
+          text-align: center;
+          padding: 32px 16px 24px;
         "
-      />
+      >
+        <img
+          src="images/profil.jpg"
+          alt="Foto Profil Mahasiswa"
+          width="150"
+          height="150"
+          style="
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 4px solid white;
+          "
+        />
+        <h1
+          style="
+            color: white;
+            font-size: 32px;
+            font-weight: bold;
+            margin: 16px 0 5px;
+          "
+        >
+          Profil Mahasiswa
+        </h1>
+        <p
+          style="
+            color: rgba(255, 255, 255, 0.85);
+            font-size: 18px;
+            margin: 0;
+          "
+        >
+          Mahasiswa Teknik Informatika
+        </p>
+      </div>
+
+      <div style="padding: 8px 32px 32px">
+        <!-- Data pribadi -->
+        <h2
+          style="
+            color: rgb(0, 102, 153);
+            font-size: 22px;
+            border-bottom: 3px solid hsl(200, 100%, 30%);
+            padding-bottom: 6px;
+            margin-top: 28px;
+          "
+        >
+          Data Pribadi
+        </h2>
+        <p style="color: #333333; font-size: 16px; margin: 6px 0">
+          <strong>Nama:</strong> Mochammad Jihan Isfalana
+        </p>
+        <p style="color: #333333; font-size: 16px; margin: 6px 0">
+          <strong>NPM:</strong> 4525210110
+        </p>
+        <p style="color: #333333; font-size: 16px; margin: 6px 0">
+          <strong>Program Studi:</strong> <em>Teknik Informatika</em>
+        </p>
+        <p style="color: #333333; font-size: 16px; margin: 6px 0">
+          <strong>Universitas:</strong> Universitas Pancasila
+        </p>
+
+        <!-- Tentang saya -->
+        <h2
+          style="
+            color: rgb(0, 102, 153);
+            font-size: 22px;
+            border-bottom: 3px solid hsl(200, 100%, 30%);
+            padding-bottom: 6px;
+            margin-top: 28px;
+          "
+        >
+          Tentang Saya
+        </h2>
+        <p
+          style="
+            color: #444444;
+            font-size: 17px;
+            line-height: 1.8;
+            text-align: justify;
+            background-color: rgba(0, 102, 153, 0.15);
+            padding: 15px;
+            border-radius: 8px;
+          "
+        >
+          Saya adalah mahasiswa yang sedang mempelajari pengembangan website.
+          Saat ini saya mempelajari HTML dan CSS sebagai dasar untuk membuat
+          halaman web yang terstruktur dan menarik.
+        </p>
+
+        <!-- Keahlian -->
+        <h2
+          style="
+            color: rgb(0, 102, 153);
+            font-size: 22px;
+            border-bottom: 3px solid hsl(200, 100%, 30%);
+            padding-bottom: 6px;
+            margin-top: 28px;
+          "
+        >
+          Keahlian
+        </h2>
+        <ul style="color: #333333; font-size: 16px; line-height: 2">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>Microsoft Office</li>
+          <li>Desain Web Dasar</li>
+        </ul>
+      </div>
     </div>
-    <hr style="border: 3px solid #003366" />
-
-    <!-- Data mahasiswa -->
-    <h2
-      style="
-        color: rgb(0, 102, 153);
-        font-size: 24px;
-        text-decoration: 5px underline;
-      "
-    >
-      Data Pribadi
-    </h2>
-    <p style="color: #333333; font-size: 16px">
-      <strong>Nama:</strong> Mochammad Jihan Isfalana
-    </p>
-    <p style="color: #333333; font-size: 16px">
-      <strong>NPM:</strong> 4525210110
-    </p>
-    <p style="color: #333333; font-size: 16px">
-      <strong>Program Studi:</strong> <em>Teknik Informatika</em>
-    </p>
-    <p style="color: #333333; font-size: 16px">
-      <strong>Universitas:</strong> Universitas Pancasila
-    </p>
-
-    <!-- Tentang saya -->
-    <h2
-      style="
-        color: rgb(0, 102, 153);
-        font-size: 24px;
-        text-decoration: 5px underline;
-      "
-    >
-      Tentang Saya
-    </h2>
-    <p
-      style="
-        color: #444444;
-        font-size: 17px;
-        line-height: 1.8;
-        text-align: justify;
-      "
-    >
-      Saya adalah mahasiswa yang sedang mempelajari pengembangan website. Saat
-      ini saya mempelajari HTML dan CSS sebagai dasar untuk membuat halaman web
-      yang terstruktur dan menarik.
-    </p>
-
-    <!-- Keahlian -->
-    <h2
-      style="
-        color: rgb(0, 102, 153);
-        font-size: 24px;
-        text-decoration: 5px underline;
-      "
-    >
-      Keahlian
-    </h2>
-    <ul style="color: #333333; font-size: 16px; line-height: 2">
-      <li>HTML</li>
-      <li>CSS</li>
-      <li>Microsoft Office</li>
-      <li>Desain Web Dasar</li>
-    </ul>
-
-    <!-- Contoh RGBA -->
-    <p
-      style="
-        background-color: rgba(0, 102, 153, 0.15);
-        padding: 15px;
-        font-size: 16px;
-      "
-    >
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis esse
-      labore iste tenetur quas officiis eveniet velit ratione repellat, magni
-      exercitationem excepturi ducimus illo! Labore accusantium maiores pariatur
-      debitis. Quidem!
-    </p>
   </body>
 </html>
