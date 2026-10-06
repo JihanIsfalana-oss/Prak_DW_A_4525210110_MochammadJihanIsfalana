@@ -1,0 +1,183 @@
+/* =====================================
+1. Pengaturan Dasar
+===================================== */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #f2f2f2;
+}
+
+/* =====================================
+2. Class Reusable
+===================================== */
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+.section {
+  padding: 50px 0;
+}
+
+/* =====================================
+3. Header
+===================================== */
+
+header {
+  background-color: #366da3;
+  color: white;
+
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 20px 0;
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+/* =====================================
+4. Hero
+===================================== */
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero-text {
+  width: 60%;
+}
+
+.hero-image {
+  width: 40%;
+  text-align: center;
+}
+
+.hero-image img {
+  width: 200px;
+  border-radius: 10px;
+}
+
+/* =====================================
+5. Tombol
+===================================== */
+
+.button {
+  display: inline-block;
+  padding: 12px 20px;
+
+  background-color: #366da3;
+  color: white;
+
+  text-decoration: none;
+
+  border-radius: 25px;
+
+  transition: 0.3s;
+}
+
+.button:hover {
+  background-color: #2e7d32;
+}
+
+/* =====================================
+6. Project
+===================================== */
+
+.project-wrapper {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.project-card {
+  background-color: white;
+
+  width: 175px;
+
+  padding: 20px;
+
+  border-radius: 10px;
+
+  box-sizing: border-box;
+
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  transition: 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* =====================================
+7. Footer
+===================================== */
+
+footer {
+  background-color: #366da3;
+  color: white;
+
+  text-align: center;
+
+  font-size: 14px;
+
+  border-top: 2px solid white;
+
+  padding: 20px;
+}
+
+/* =====================================
+8. Media Query
+===================================== */
+
+@media (max-width: 768px) {
+  .header-content {
+    flex-direction: column;
+  }
+
+  nav {
+    margin-top: 15px;
+  }
+
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-text,
+  .hero-image {
+    width: 100%;
+  }
+
+  .project-wrapper {
+    justify-content: center;
+  }
+
+  .project-card {
+    width: 100%;
+  }
+}
