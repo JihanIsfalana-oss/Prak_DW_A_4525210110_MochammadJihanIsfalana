@@ -1,0 +1,205 @@
+/* ==========================================================================
+   RESET & GLOBAL STYLES (Pertemuan 5 - Wireframe)
+   ========================================================================== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  color: #333333;
+  line-height: 1.6;
+}
+
+/* ==========================================================================
+   HEADER & NAVBAR
+   ========================================================================== */
+.header {
+  background-color: #cccccc;
+  border-bottom: 2px solid #555555;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  padding: 10px 20px;
+  border: 2px dashed #555555;
+  font-weight: bold;
+  background-color: #dddddd;
+}
+
+.judul {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.navbar {
+  background-color: #bbbbbb;
+  border-bottom: 2px solid #555555;
+  display: flex;
+  gap: 15px;
+  padding: 10px 20px;
+}
+
+.navbar a {
+  color: #333333;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 5px 10px;
+}
+
+.navbar a:hover {
+  background-color: #999999;
+}
+
+/* ==========================================================================
+   MAIN LAYOUT (Sidebar + Content)
+   ========================================================================== */
+.layout {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  min-height: 500px;
+}
+
+/* Sidebar */
+.sidebar {
+  flex: 1;
+  background-color: #dddddd;
+  border: 2px solid #777777;
+  padding: 20px;
+}
+
+.sidebar h3 {
+  margin-bottom: 15px;
+  border-bottom: 1px solid #555555;
+  padding-bottom: 5px;
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar ul li {
+  padding: 10px 0;
+  border-bottom: 1px dashed #aaaaaa;
+  cursor: pointer;
+}
+
+.sidebar ul li:hover {
+  font-weight: bold;
+}
+
+/* Area Konten Utama */
+.content {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* ==========================================================================
+   HERO SECTION & CARDS
+   ========================================================================== */
+.hero {
+  background-color: #eeeeee;
+  border: 2px solid #777777;
+  padding: 30px;
+}
+
+.image-placeholder {
+  height: 150px;
+  border: 2px dashed #777777;
+  background-color: #dddddd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.hero h1 {
+  margin-bottom: 10px;
+}
+
+.hero p {
+  margin-bottom: 15px;
+}
+
+.hero button {
+  padding: 10px 20px;
+  border: 2px solid #555555;
+  background-color: #cccccc;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.hero button:hover {
+  background-color: #aaaaaa;
+}
+
+/* Grid Kontainer Card */
+.card-container {
+  display: flex;
+  gap: 20px;
+}
+
+.card {
+  flex: 1;
+  background-color: #eeeeee;
+  border: 2px solid #555555;
+  padding: 15px;
+}
+
+.gambar-card {
+  height: 120px;
+  border: 2px dashed #777777;
+  background-color: #dddddd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card h3 {
+  margin-bottom: 5px;
+}
+
+/* ==========================================================================
+   FOOTER
+   ========================================================================== */
+.footer {
+  text-align: center;
+  padding: 20px;
+  border-top: 2px solid #555555;
+  background-color: #cccccc;
+  margin-top: 20px;
+}
+
+/* ==========================================================================
+   RESPONSIVE LAYOUT (Tablet & Smartphone)
+   ========================================================================== */
+@media (max-width: 768px) {
+  .layout {
+    flex-direction: column;
+  }
+
+  .sidebar,
+  .content {
+    width: 100%;
+  }
+
+  .card-container {
+    flex-direction: column;
+  }
+
+  .navbar {
+    flex-wrap: wrap;
+  }
+}
