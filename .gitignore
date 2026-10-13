@@ -1,0 +1,18 @@
+# === OPERATING SYSTEM SURPLUS ===
+.DS_Store
+.AppleDouble
+.LSOverride
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# === IDE & CODE EDITORS ===
+.vscode/
+.idea/
+*.suo
+*.swp
+
+# === ARCHIVES ===
+*.zip
+*.rar
+*.7z
