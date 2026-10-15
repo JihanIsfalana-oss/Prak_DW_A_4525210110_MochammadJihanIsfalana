@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wireframe Company Profile - PT EMJAYYY Studio</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="page">
+      <!-- Kontrol anotasi (checkbox + label, diatur lewat CSS) -->
+      <input type="checkbox" id="anotasi" checked />
+      <label for="anotasi" class="toggle">Tampilkan anotasi</label>
+
+      <div class="site">
+        <!-- Anotasi 1 & 2: header dan navbar (menempel di atas saat digulir) -->
+        <div class="topbar">
+          <header class="header" data-n="1" id="beranda">
+            <p class="brand">
+              <img
+                src="images/logo.jpg"
+                alt="Logo PT EMJAYYY Studio"
+                width="36"
+                height="36"
+                title="Logo perusahaan"
+              />
+              PT EMJAYYY Studio
+            </p>
+            <a class="btn" href="#kontak">Hubungi Kami</a>
+          </header>
+          <nav class="nav" data-n="2" aria-label="Navigasi utama">
+            <ul>
+              <li><a class="aktif" href="#beranda">Beranda</a></li>
+              <li><a href="#tentang">Tentang</a></li>
+              <li><a href="#layanan">Layanan</a></li>
+              <li><a href="#portofolio">Portofolio</a></li>
+              <li><a href="#kontak">Kontak</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <main>
+          <!-- Anotasi 3: hero -->
+          <section class="section hero" data-n="3">
+            <div>
+              <h1>Solusi Digital untuk <em>Bisnis</em> Musik Anda</h1>
+              <p>
+                Kami membantu perusahaan musik membangun
+                <strong>identitas digital</strong> yang rapi, cepat, dan nyaman
+                dibuka di desktop maupun ponsel.
+              </p>
+              <p>
+                <a class="btn" href="#layanan">Lihat Layanan</a>
+                <a class="btn btn-outline" href="#tentang">Tentang Kami</a>
+              </p>
+            </div>
+            <img
+              src="images/gambar-perusahaan.jpg"
+              alt="Placeholder gambar utama perusahaan"
+              width="640"
+              height="420"
+            />
+          </section>
+
+          <!-- Anotasi 4: tentang kami + statistik -->
+          <section class="section about" id="tentang" data-n="4">
+            <img
+              src="images/gambar2-perusahaan.jpg"
+              alt="Placeholder foto PT EMJAYYY Studio"
+              width="560"
+              height="360"
+              title="Foto tim"
+            />
+            <div>
+              <h2>Tentang Kami</h2>
+              <p>
+                PT EMJAYYY Studio adalah studio pengembangan web yang berfokus
+                pada struktur yang benar dan hierarki informasi yang jelas.
+              </p>
+              <p>
+                Setiap proyek dimulai dari wireframe agar perubahan susunan
+                konten dapat disepakati dengan biaya rendah.
+              </p>
+              <ul class="stats">
+                <li><strong>10+</strong> Tahun</li>
+                <li><strong>150+</strong> Proyek</li>
+                <li><strong>50+</strong> Klien</li>
+              </ul>
+            </div>
+          </section>
+
+          <!-- Anotasi 5: layanan (3 card -> 1 kolom di mobile) -->
+          <section class="section" id="layanan" data-n="5">
+            <h2>Layanan Kami</h2>
+            <div class="grid-3">
+              <article class="card">
+                <img
+                  src="./images/ikon.jpg"
+                  alt="Ikon layanan desain web"
+                  width="56"
+                  height="56"
+                />
+                <h3>Desain Web</h3>
+                <p>Perancangan wireframe hingga tampilan akhir.</p>
+              </article>
+              <article class="card">
+                <img
+                  src="images/ikon.jpg"
+                  alt="Ikon layanan pengembangan web"
+                  width="56"
+                  height="56"
+                />
+                <h3>Pengembangan Web</h3>
+                <p>Pembuatan halaman responsif dengan HTML dan CSS.</p>
+              </article>
+              <article class="card">
+                <img
+                  src="images/ikon.jpg"
+                  alt="Ikon layanan pemeliharaan"
+                  width="56"
+                  height="56"
+                />
+                <h3>Pemeliharaan</h3>
+                <p>Perbaikan dan pembaruan konten secara berkala.</p>
+              </article>
+            </div>
+          </section>
+
+          <!-- Anotasi 6: portofolio dan klien -->
+          <section class="section" id="portofolio" data-n="6">
+            <h2>Portofolio &amp; Klien</h2>
+            <div class="grid-3">
+              <figure>
+                <img
+                  src="images/proyek1.jpg"
+                  alt="Placeholder proyek 1"
+                  width="480"
+                  height="300"
+                />
+                <figcaption>Proyek 1</figcaption>
+              </figure>
+              <figure>
+                <img
+                  src="images/proyek2.jpg"
+                  alt="Placeholder proyek 2"
+                  width="480"
+                  height="300"
+                />
+                <figcaption>Proyek 2</figcaption>
+              </figure>
+              <figure>
+                <img
+                  src="images/proyek3.jpg"
+                  alt="Placeholder proyek 3"
+                  width="480"
+                  height="300"
+                />
+                <figcaption>Proyek 3</figcaption>
+              </figure>
+            </div>
+            <ul class="klien">
+              <li>Klien A</li>
+              <li>Klien B</li>
+              <li>Klien C</li>
+              <li>Klien D</li>
+            </ul>
+          </section>
+
+          <!-- Anotasi 7: kontak -->
+          <section class="section kontak" id="kontak" data-n="7">
+            <div>
+              <h2>Mulai Diskusi Proyek</h2>
+              <p>Ceritakan kebutuhan Anda, kami bantu rancang strukturnya.</p>
+              <a
+                class="btn"
+                href="mailto:halo@emjayyy.example"
+                title="Kirim email ke PT EMJAYYY Studio"
+                >Kirim Email</a
+              >
+            </div>
+            <dl>
+              <dt>Email</dt>
+              <dd>
+                <a href="mailto:halo@emjayyy.example">halo@emjayyy.example</a>
+              </dd>
+              <dt>Alamat</dt>
+              <dd>Depok, Jawa Barat</dd>
+              <dt>Referensi</dt>
+              <dd>
+                <a
+                  href="https://www.w3.org/"
+                  target="_blank"
+                  rel="noopener"
+                  title="Kunjungi website W3C"
+                  >W3C</a
+                >
+              </dd>
+            </dl>
+          </section>
+        </main>
+
+        <!-- Anotasi 8: footer -->
+        <footer class="footer" data-n="8">
+          <div>
+            <p><strong>PT EMJAYYY Studio</strong></p>
+            <p>Studio pengembangan web.</p>
+          </div>
+          <div>
+            <p><strong>Tautan</strong></p>
+            <ul>
+              <li><a href="#tentang">Tentang</a></li>
+              <li><a href="#layanan">Layanan</a></li>
+            </ul>
+          </div>
+          <div>
+            <p><strong>Kontak</strong></p>
+            <ul>
+              <li><a href="mailto:halo@emjayyy.example">Email</a></li>
+              <li><a href="#kontak">Form kontak</a></li>
+            </ul>
+          </div>
+          <p class="copy">
+            &copy; 2026 PT EMJAYYY Studio. Hak cipta dilindungi.
+          </p>
+        </footer>
+      </div>
+
+      <!-- Legenda anotasi -->
+      <section class="panel" id="legenda">
+        <h2>Legenda Anotasi</h2>
+        <ol>
+          <li>
+            <strong>Header</strong> (<code>&lt;header&gt;</code>): identitas
+            website, logo dan tombol aksi utama.
+          </li>
+          <li>
+            <strong>Navbar</strong> (<code>&lt;nav&gt;</code>): akses ke lima
+            bagian halaman.
+          </li>
+          <li>
+            <strong>Hero</strong> (<code>&lt;section&gt;</code>): kesan pertama,
+            judul utama, dan dua tombol aksi.
+          </li>
+          <li>
+            <strong>Tentang Kami</strong>: profil singkat dan statistik untuk
+            membangun kredibilitas.
+          </li>
+          <li><strong>Layanan</strong>: tiga card layanan utama.</li>
+          <li>
+            <strong>Portofolio &amp; Klien</strong>: bukti kerja dan daftar
+            klien.
+          </li>
+          <li>
+            <strong>Kontak</strong>: ajakan berdiskusi dan informasi kontak.
+          </li>
+          <li>
+            <strong>Footer</strong> (<code>&lt;footer&gt;</code>): tautan cepat
+            dan hak cipta.
+          </li>
+        </ol>
+        <h3>Catatan Struktur</h3>
+        <dl>
+          <dt>Sidebar</dt>
+          <dd>
+            Tidak dipakai. Company profile bersifat linear, jadi konten utama
+            memakai lebar penuh dan navigasi lewat navbar.
+          </dd>
+          <dt>Desktop</dt>
+          <dd>
+            Hero dan Tentang dua kolom; Layanan dan Portofolio tiga kolom.
+          </dd>
+          <dt>Mobile (&lt; 768 px)</dt>
+          <dd>
+            Semua grid menjadi satu kolom dan navbar dapat digulir ke samping.
+          </dd>
+        </dl>
+      </section>
+    </div>
+  </body>
+</html>
