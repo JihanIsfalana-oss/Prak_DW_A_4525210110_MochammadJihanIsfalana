@@ -17,8 +17,6 @@
 
 **Ketentuan.** Design System mencakup colors, typography, spacing, buttons, form controls, dan cards. Mockup memakai color palette, type scale, button style, card style, serta layout responsif untuk desktop dan mobile.
 
-**Halaman dokumentasi.** Buka [`DesignSystem/index.html`](DesignSystem/index.html) untuk melihat contoh visual tiap bagian design system.
-
 ## Struktur Folder
 
 ```text
