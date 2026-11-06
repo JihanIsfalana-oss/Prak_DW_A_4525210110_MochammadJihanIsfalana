@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Form pendaftaran relawan Bakti Masyarakat dan Gerakan Peduli Lingkungan.">
+  <title>Daftar Voluntir | Green Impact</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="Green Impact, beranda">
+      <span class="brand-mark" aria-hidden="true">G</span>
+      <span>green<span class="brand-light">impact</span></span>
+    </a>
+    <span class="header-note">Bersama untuk bumi yang lebih baik</span>
+  </header>
+
+  <main class="page-shell">
+    <section class="intro-panel" aria-labelledby="page-title">
+      <div class="eyebrow"><span class="eyebrow-line"></span> AKSI NYATA DIMULAI DARI KITA</div>
+      <h1 id="page-title">Jadilah bagian dari <em>perubahan.</em></h1>
+      <p class="intro-copy">
+        Satu langkah kecil dapat membawa dampak besar. Bergabunglah bersama
+        komunitas kami dalam kegiatan Bakti Masyarakat &amp; Gerakan Peduli Lingkungan.
+      </p>
+
+      <div class="event-card">
+        <div class="event-icon" aria-hidden="true">✳</div>
+        <div>
+          <span class="event-label">KEGIATAN RELAWAN</span>
+          <h2>Bakti Masyarakat &amp;<br>Gerakan Peduli Lingkungan</h2>
+          <p>Kolaborasi, kepedulian, dan aksi untuk lingkungan sekitar.</p>
+        </div>
+      </div>
+
+      <div class="impact-note">
+        <span class="impact-number">01</span>
+        <p><strong>Mulai dari kepedulian.</strong><br>Waktu dan keahlianmu dapat memberikan arti bagi banyak orang.</p>
+      </div>
+      <div class="decorative-leaf leaf-one" aria-hidden="true">✳</div>
+      <div class="decorative-leaf leaf-two" aria-hidden="true">✳</div>
+    </section>
+
+    <section class="form-panel" aria-labelledby="form-title">
+      <div class="form-heading">
+        <span class="form-kicker">FORMULIR PENDAFTARAN</span>
+        <h2 id="form-title">Daftar Voluntir</h2>
+        <p>Lengkapi informasi berikut untuk bergabung sebagai relawan.</p>
+        <div class="required-note"><span>*</span> Wajib diisi</div>
+      </div>
+
+      <!-- Form ini merupakan antarmuka front-end. Endpoint perlu disesuaikan
+           ketika aplikasi sudah memiliki backend untuk menerima pendaftaran. -->
+      <form action="#" method="post" class="volunteer-form">
+        <div class="form-section">
+          <div class="section-heading">
+            <span class="section-number">01</span>
+            <div>
+              <h3>Informasi pribadi</h3>
+              <p>Kenali siapa dirimu.</p>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="nama">Nama lengkap <span>*</span></label>
+            <input
+              type="text"
+              id="nama"
+              name="nama"
+              placeholder="Contoh: Aditya Pratama"
+              minlength="3"
+              maxlength="80"
+              autocomplete="name"
+              required>
+            <small>Masukkan nama sesuai identitas.</small>
+          </div>
+
+          <div class="form-group">
+            <label for="telepon">Nomor telepon <span>*</span></label>
+            <input
+              type="tel"
+              id="telepon"
+              name="telepon"
+              placeholder="Contoh: 081234567890"
+              pattern="08[0-9]{8,11}"
+              title="Nomor telepon harus diawali 08 dan terdiri dari 10 sampai 13 digit."
+              minlength="10"
+              maxlength="13"
+              autocomplete="tel"
+              required>
+            <small>Gunakan nomor aktif yang dapat dihubungi.</small>
+          </div>
+
+          <div class="form-group">
+            <label for="domisili">Domisili / wilayah <span>*</span></label>
+            <div class="select-wrap">
+              <select id="domisili" name="domisili" required>
+                <option value="" selected disabled>Pilih wilayah domisili</option>
+                <option value="jakarta">DKI Jakarta</option>
+                <option value="bogor">Bogor</option>
+                <option value="depok">Depok</option>
+                <option value="tangerang">Tangerang</option>
+                <option value="bekasi">Bekasi</option>
+                <option value="luar-jabodetabek">Luar Jabodetabek</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-section">
+          <div class="section-heading">
+            <span class="section-number">02</span>
+            <div>
+              <h3>Kontribusi relawan</h3>
+              <p>Pilih peran dan kemampuanmu.</p>
+            </div>
+          </div>
+
+          <fieldset class="form-group choice-group">
+            <legend>Divisi relawan <span>*</span></legend>
+            <div class="choice-grid">
+              <label class="choice-card">
+                <input type="radio" name="divisi" value="logistik" required>
+                <span class="choice-content">
+                  <span class="choice-symbol" aria-hidden="true">▤</span>
+                  <strong>Logistik</strong>
+                  <small>Persiapan kebutuhan acara</small>
+                </span>
+              </label>
+              <label class="choice-card">
+                <input type="radio" name="divisi" value="humas" required>
+                <span class="choice-content">
+                  <span class="choice-symbol" aria-hidden="true">◎</span>
+                  <strong>Humas</strong>
+                  <small>Komunikasi dan publikasi</small>
+                </span>
+              </label>
+              <label class="choice-card">
+                <input type="radio" name="divisi" value="lapangan" required>
+                <span class="choice-content">
+                  <span class="choice-symbol" aria-hidden="true">⌁</span>
+                  <strong>Lapangan</strong>
+                  <small>Aksi langsung di lokasi</small>
+                </span>
+              </label>
+            </div>
+          </fieldset>
+
+          <fieldset class="form-group choice-group">
+            <legend>Keahlian / minat khusus</legend>
+            <p class="field-description">Pilih satu atau lebih kemampuan yang kamu miliki.</p>
+            <div class="skill-grid">
+              <label class="check-option">
+                <input type="checkbox" name="keahlian[]" value="dokumentasi">
+                <span class="custom-check" aria-hidden="true"></span>
+                Dokumentasi
+              </label>
+              <label class="check-option">
+                <input type="checkbox" name="keahlian[]" value="pertolongan-pertama">
+                <span class="custom-check" aria-hidden="true"></span>
+                Pertolongan pertama
+              </label>
+              <label class="check-option">
+                <input type="checkbox" name="keahlian[]" value="mengajar">
+                <span class="custom-check" aria-hidden="true"></span>
+                Mengajar
+              </label>
+              <label class="check-option">
+                <input type="checkbox" name="keahlian[]" value="desain">
+                <span class="custom-check" aria-hidden="true"></span>
+                Desain grafis
+              </label>
+              <label class="check-option">
+                <input type="checkbox" name="keahlian[]" value="komunikasi">
+                <span class="custom-check" aria-hidden="true"></span>
+                Komunikasi
+              </label>
+              <label class="check-option">
+                <input type="checkbox" name="keahlian[]" value="lingkungan">
+                <span class="custom-check" aria-hidden="true"></span>
+                Edukasi lingkungan
+              </label>
+            </div>
+          </fieldset>
+        </div>
+
+        <div class="form-section">
+          <div class="section-heading">
+            <span class="section-number">03</span>
+            <div>
+              <h3>Ceritakan motivasimu</h3>
+              <p>Setiap kontribusi berawal dari alasan yang berarti.</p>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="motivasi">Motivasi bergabung <span>*</span></label>
+            <textarea
+              id="motivasi"
+              name="motivasi"
+              rows="5"
+              minlength="20"
+              maxlength="500"
+              placeholder="Ceritakan alasan dan harapanmu bergabung sebagai relawan..."
+              required></textarea>
+            <small>Minimal 20 karakter dan maksimal 500 karakter.</small>
+          </div>
+        </div>
+
+        <div class="commitment-box">
+          <label class="commitment-option">
+            <input type="checkbox" name="persetujuan" value="setuju" required>
+            <span class="custom-check" aria-hidden="true"></span>
+            <span>
+              <strong>Saya menyetujui komitmen relawan.</strong>
+              <small>Saya bersedia mengikuti arahan panitia, menjaga sikap, dan berpartisipasi secara bertanggung jawab selama kegiatan berlangsung.</small>
+            </span>
+          </label>
+        </div>
+
+        <div class="button-group">
+          <button type="submit" class="btn btn-primary">
+            Kirim Pendaftaran <span aria-hidden="true">↗</span>
+          </button>
+          <button type="reset" class="btn btn-reset">Reset Form</button>
+        </div>
+        <p class="form-footnote">Dengan mendaftar, kamu mengambil langkah untuk lingkungan yang lebih baik.</p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span>© 2026 Green Impact Community</span>
+    <span>Small actions. Meaningful impact.</span>
+  </footer>
+</body>
+</html>
